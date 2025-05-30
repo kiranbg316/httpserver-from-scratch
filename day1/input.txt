@@ -1,0 +1,4 @@
+hello kiran!
+this is the sample input file
+have a great day 1!
+
