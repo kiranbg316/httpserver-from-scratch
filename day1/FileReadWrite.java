@@ -8,7 +8,7 @@ public class FileReadWrite {
        ){
            String line;
            while ((line= reader.readLine()) != null){
-           //    System.out.println(line);
+           //fi    System.out.println(line);
                writer.write(line);
                writer.newLine();
 

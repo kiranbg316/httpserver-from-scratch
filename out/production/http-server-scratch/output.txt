@@ -5,9 +5,5 @@ task 1: dsa 1 hour 2 question any done but   no questions
 
 task 2: ticket booking app update not
 
-task 3:learn basics of git github or sql done except sql
-
-task 4: learn something new in depth theory done
-extra task
-read 10 pages of book not
+t
 for extra cig
