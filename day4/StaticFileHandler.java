@@ -7,11 +7,11 @@ import java.nio.file.Paths;
 public class StaticFileHandler {
     private Socket clientSocket;
 
-    public StaticFileHandler(Socket clientSocket) {
+    public StaticFileHandler(String clientSocket) {
         this.clientSocket = clientSocket;
     }
 
-    public void handle() {
+    public void handle(String requestedFile) {
         try {
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             BufferedOutputStream out = new BufferedOutputStream(clientSocket.getOutputStream());
@@ -39,7 +39,8 @@ public class StaticFileHandler {
                 String response = "HTTP/1.1 404 Not Found\r\n" +
                         "Content-Type: text/plain\r\n" +
                         "Content-Length: 13\r\n" +
-                        "\r\n" + "404 Not Found";
+
+            "\r\n" + "404 Not Found";
                 out.write(response.getBytes());
             }
             out.flush();
